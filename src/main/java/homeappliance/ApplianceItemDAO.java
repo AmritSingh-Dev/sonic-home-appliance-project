@@ -40,7 +40,9 @@ public class ApplianceItemDAO {
 	    Connection conn = null;
 	    
 	    try {
-	        conn = DriverManager.getConnection("jdbc:sqlite:appliance.db"); //Establish connection to DB specified by file path 
+	    	String url = "jdbc:sqlite:src/main/resources/appliance.sql";
+
+            conn = DriverManager.getConnection(url); 
 	        String table = "CREATE TABLE IF NOT EXISTS applianceItem (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     "homeApplianceId INTEGER NOT NULL, " +

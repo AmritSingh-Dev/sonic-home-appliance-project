@@ -41,7 +41,9 @@ public class CustomerDAO {
 	    Connection conn = null;
 	    
 	    try {
-	        conn = DriverManager.getConnection("jdbc:sqlite:appliance.db");
+	    	String url = "jdbc:sqlite:src/main/resources/appliance.sql";
+
+            conn = DriverManager.getConnection(url);
 	        String table = "CREATE TABLE IF NOT EXISTS customer (" +
 	                       "customerId INTEGER PRIMARY KEY AUTOINCREMENT, " +
 	                       "businessName TEXT, " +

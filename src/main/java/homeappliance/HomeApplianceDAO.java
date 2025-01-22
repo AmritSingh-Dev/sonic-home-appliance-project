@@ -36,7 +36,10 @@ public class HomeApplianceDAO {
     protected Connection connect() {
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite:appliance.db");
+            String url = "jdbc:sqlite:src/main/resources/appliance.sql";
+
+            conn = DriverManager.getConnection(url);
+
             String table = "CREATE TABLE IF NOT EXISTS appliance (" +
                            "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                            "sku TEXT NOT NULL, " +
@@ -46,11 +49,13 @@ public class HomeApplianceDAO {
             try (PreparedStatement preStatement = conn.prepareStatement(table)) {
                 preStatement.execute();
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return conn;
     }
+
+
 
     /**
      * Retrieves all appliance products from the database and returns them as a list of HomeAppliance objects.

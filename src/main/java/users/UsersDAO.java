@@ -39,7 +39,9 @@ public class UsersDAO {
 	private Connection connect() {
 	    Connection conn = null;
 	    try {
-	        conn = DriverManager.getConnection("jdbc:sqlite:appliance.db");
+	    	String url = "jdbc:sqlite:src/main/resources/appliance.sql";
+
+            conn = DriverManager.getConnection(url);
 	        if (conn != null) {
 	            String table = "CREATE TABLE IF NOT EXISTS users (" + 
 	                           "userId INTEGER PRIMARY KEY AUTOINCREMENT, " +  
