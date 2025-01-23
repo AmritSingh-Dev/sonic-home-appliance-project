@@ -170,7 +170,7 @@ public class RootHandler implements HttpHandler {
             }
         } else {
             // Welcome message and options
-            out.write("<h1 class='text-center mb-4'>Amrit's Home Appliance Store</h1>" +
+            out.write("<h1 class='text-center mb-4'>Sonic Home Appliances</h1>" +
                     "        <p class='text-center'>Manage and explore products and customers</p>" +
                     "        <div class='list-group'>" +
                     "            <a href='/products' class='list-group-item list-group-item-action d-flex align-items-center text-white bg-primary rounded my-2 shadow' style='transition: transform .2s;'>" +

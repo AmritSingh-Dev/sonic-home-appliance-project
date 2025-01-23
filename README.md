@@ -1,18 +1,51 @@
-# Sonic Home Appliances Store/Management System
+# Sonic Home Appliance Store/Management System
 
-## Description
+## 📖 Description
 
 The **Sonic Home Appliance Store/Management System** is a Java-based application that demonstrates the management of home appliances, customer data, and user roles. It provides a robust **web interface** with features such as login authentication (featuring secure password hashing), shopping basket management, and seamless database connection supporting full CRUD operations. This project is structured to demonstrate scalable application development, incorporating modern design patterns (MVC, Singleton etc) and best practices for software engineering.
 
 ---
 
-## Motivation
+## 🎯 Motivation
 
-This project aims to serve as a practice example in learning about scalable application development, while also highlighting how technical designs can enhance both the user experience and backend efficiency.
+This project aims to serve as a practice example in learning about scalable application development, while also highlighting how technical designs can enhance both the user experience and back-end efficiency.
 
 Managing a home appliance store, whether real or simulated, involves multiple complex tasks, from maintaining inventory to processing customer purchases. I created the Sonic Home Appliances Store to tackle these challenges in a way that combines practical functionality with educational value. 
 
 This project isn’t just about building a system; it’s about showcasing how Java can be used to solve real-world problems by implementing robust design patterns and combining them with advanced features like a web interface, authentication, and dynamic shopping basket functionality. By bridging the gap between console-based and web-based interfaces, the project demonstrates the versatility and power of Java technologies in building adaptable and user-focused program.
+
+---
+
+## 🛠️ Technologies
+
+This project implements a variety of technologies and libraries to build and manage its functionality. Below is a breakdown of the technologies used:
+
+### Programming Language
+- **Java**: The primary programming language for the application, used for developing back-end logic and implementing object-oriented programming principles.
+
+### Database
+- **SQLite**: A lightweight and efficient relational database for storing application data. The project includes a schema file (`appliance.sql`) for database setup.
+
+### Frameworks and Libraries
+- **JUnit**: A widely-used testing framework for Java, ensuring code quality and functionality through unit tests.
+- **Mockito**: A mocking library for Java, used for testing components in isolation by simulating dependencies.
+- **JBcrypt**: For securely hashing passwords, enhancing the application's security.
+- **Byte Buddy**: A runtime code generation library, often utilised by mocking frameworks like Mockito.
+- **Objenesis**: A library used by Mockito to instantiate objects without calling their constructors.
+
+### Design and Architecture
+- **DAO Pattern**: Used for database operations, ensuring clean separation between data access logic and the rest of the application (e.g., `CustomerDAO`, `OrderDAO`, `HomeApplianceDAO`).
+- **MVC**: The project adopts an MVC-like structure, with web handlers for the controller layer and DAO classes for the model layer.
+	- Controller: The `Controller` class implements the menu system, managing user interactions and coordinating between the Model and View layers.
+- **Singleton Pattern**: Used for centralised session management in `LoginSessionManager`, ensuring a single shared instance for active sessions.
+
+### Front-end and Styling
+- **Bootstrap**: Front-end framework used for responsive web design and styling in web-based interfaces.
+- **HTML/CSS**: Used for any UI components in the project, as seen in the generated documentation or potential static resources.
+
+### Other Tools
+- **SQLite JDBC Driver**: A library for interacting with SQLite databases from Java.
+- **JavaDoc**: For generating HTML-based documentation for the project's classes and methods.
 
 ---
 
@@ -29,8 +62,8 @@ Ensure the following are installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/HomeApplianceStore.git
-   cd HomeApplianceStore
+   git clone https://github.com/yourusername/SonicHomeApplianceProject.git
+   cd SonicHomeApplianceStore
    ```
 2. Set Up the Database:
 	```bash
@@ -72,6 +105,9 @@ Ensure the following are installed:
 ## 📖 Usage
 
 ### Features
+
+#### Console Menu System/Web Interface:
+- Features and operations can be executed via the console menu and we interface.
 
 #### Authentication:
 - Users can sign up, log in, and log out using the secure web interface.
@@ -116,8 +152,8 @@ Contributions are welcome! Follow these steps to get started:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/HomeApplianceStore.git
-   cd HomeApplianceStore
+   git clone https://github.com/amritsingh-dev/SonicHomeApplianceProject.git
+   cd SonicHomeApplianceProject
    ```
 
 2. Build the project:

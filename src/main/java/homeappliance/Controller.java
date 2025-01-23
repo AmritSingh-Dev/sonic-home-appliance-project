@@ -46,7 +46,7 @@ public class Controller {
 		boolean exit = false;
 		 do {   //Do-while loop which repeatedly shows the menu and process user inputs until the user exit's the menu
 			 System.out.println("----------------------------");
-			 System.out.println("Amrit's Home Appliance Store");
+			 System.out.println("Sonic Home Appliances");
 			 System.out.println("Choose from these options");
 			 System.out.println("----------------------------");
 			 System.out.println("[1] Product Menu");
