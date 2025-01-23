@@ -1,20 +1,18 @@
-# Home Appliance Store Store/Management System
+# Sonic Home Appliances Store/Management System
 
 ## Description
 
-The **Home Appliance Store Store/Management System** is a Java-based application that demonstrates the use of design patterns such as **MVC** and advanced features like a **web interface** with login authentication, a shopping basket (add, remove, checkout), and a console-based menu system. It offers a seamless user experience for both a web-based frontend and a command-line backend, showcasing the versatility of Java technologies in real-world scenarios.
+The **Sonic Home Appliance Store/Management System** is a Java-based application that demonstrates the management of home appliances, customer data, and user roles. It provides a robust **web interface** with features such as login authentication (featuring secure password hashing), shopping basket management, and seamless database connection supporting full CRUD operations. This project is structured to demonstrate scalable application development, incorporating modern design patterns (MVC, Singleton etc) and best practices for software engineering.
 
 ---
 
-## Why?
+## Motivation
 
-Managing a home appliance store involves complex workflows like:
-- Maintaining an up-to-date inventory.
-- Simplifying order management and customer interactions.
-- Providing a secure login system for customers and admins.
-- Streamlining the checkout process through a robust shopping basket feature.
+This project aims to serve as a practice example in learning about scalable application development, while also highlighting how technical designs can enhance both the user experience and backend efficiency.
 
-This project was born out of the need to integrate multiple functionalities into a single application. Whether you're an admin overseeing operations or a customer making purchases, this system caters to all needs while adhering to good software design principles.
+Managing a home appliance store, whether real or simulated, involves multiple complex tasks, from maintaining inventory to processing customer purchases. I created the Sonic Home Appliances Store to tackle these challenges in a way that combines practical functionality with educational value. 
+
+This project isn’t just about building a system; it’s about showcasing how Java can be used to solve real-world problems by implementing robust design patterns and combining them with advanced features like a web interface, authentication, and dynamic shopping basket functionality. By bridging the gap between console-based and web-based interfaces, the project demonstrates the versatility and power of Java technologies in building adaptable and user-focused program.
 
 ---
 
@@ -34,21 +32,28 @@ Ensure the following are installed:
    git clone https://github.com/yourusername/HomeApplianceStore.git
    cd HomeApplianceStore
    ```
+2. Set Up the Database:
+	```bash
+   sqlite3 appliance.db < src/main/resources/appliance.sql
+   ```	
 
-2. Compile the source code:
+3. Compile the source code:
    ```bash
    javac -d bin -cp lib/* src/main/java/**/*.java
    ```
 
-3. Run the application (web mode):
+4. Run the application (web mode):
    ```bash
    java -cp bin:lib/* homeappliance.web.Main
    ```
 
-4. Run the application (console mode):
+5. Run the application (console mode):
    ```bash
    java -cp bin:lib/* homeappliance.console.Menu
    ```
+
+5. Access the Web-interface:
+	- Open your browser and navigate to http://localhost:8080.
 
 ### Running Tests
 
@@ -68,17 +73,40 @@ Ensure the following are installed:
 
 ### Features
 
-- **Customer Management**:
-  - Add, update, delete, and view customer profiles.
-- **Product Management**:
-  - Maintain an inventory of appliances with options to add, update, or delete products.
-- **Order Processing**:
-  - Create and manage orders, with a basket feature for adding/removing items and completing checkouts.
-- **Login System**:
-  - Secure login functionality for both customers and admins.
-- **Dual Interfaces**:
-  - A **web-based interface** for modern accessibility.
-  - A **console-based menu system** for quick operations directly in the terminal.
+#### Authentication:
+- Users can sign up, log in, and log out using the secure web interface.
+- Passwords are securely hashed to ensure user data protection via jbcrypt.
+
+#### Shopping Basket:
+- Customers can browse products, add them to their basket, and proceed to checkout.
+- The basket supports real-time updates as users add or remove items.
+
+#### Admin Dashboard:
+- Administrators can:
+  - View and manage all customers and products.
+  - Update product details or remove products.
+  - Assign roles to users.
+
+#### CRUD Operations:
+- **Customers:**
+  - Add, update, and delete customer details.
+- **Products:**
+  - Add, update, and delete appliance details.
+- **Orders:**
+  - View and manage customer orders.
+
+#### Sorting and Filtering:
+- Customers and administrators can sort and filter products or customer records by various attributes, such as price, name, or registration date.
+
+#### Search Functionality:
+- A search bar is available for users to quickly find products or customers by name, ID, or other relevant fields.
+
+#### Unit Testing:
+- The project includes comprehensive unit tests to ensure the functionality of key features such as database operations, business logic, and user flows.
+- Run the tests with:
+  ```bash
+  mvn test
+  ```
 
 ---
 
