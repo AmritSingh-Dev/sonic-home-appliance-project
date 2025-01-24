@@ -1,6 +1,6 @@
 # Sonic Home Appliance Store/Management System
 
-## 📖 Description
+## 📝 Description
 
 The **Sonic Home Appliance Store/Management System** is a Java-based application that demonstrates the management of home appliances, customer data, and user roles. It provides a robust **web interface** with features such as login authentication (featuring secure password hashing), shopping basket management, and seamless database connection supporting full CRUD operations. This project is structured to demonstrate scalable application development, incorporating modern design patterns (MVC, Singleton etc) and best practices for software engineering.
 
@@ -16,7 +16,7 @@ This project isn’t just about building a system; it’s about showcasing how J
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Technology
 
 This project implements a variety of technologies and libraries to build and manage its functionality. Below is a breakdown of the technologies used:
 
