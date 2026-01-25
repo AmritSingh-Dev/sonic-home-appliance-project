@@ -19,9 +19,9 @@ This project was built to:
 
 ---
 
-## Key Features
+## ⭐ Key Features
 
-### Customer Functionality
+#### Customer Functionality
 - User registration and authentication
 - Secure password storage using BCrypt
 - Browse home appliances
@@ -29,7 +29,7 @@ This project was built to:
 - Shopping basket management
 - Order placement and history
 
-### Admin Functionality
+#### Admin Functionality
 - Manage home appliances (create, update, delete)
 - View and manage customers
 - View and manage orders
@@ -48,18 +48,18 @@ This project was built to:
 
 ---
 
-## Architecture
+## 🏛️ Architecture
 
 The project follows a clean, modular architecture inspired by MVC principles.
 
-### Design Patterns Used
+#### Design Patterns Used
 - **DAO (Data Access Object)** – Database abstraction
 - **Singleton** – Session and authentication management
 - **Separation of Concerns** – Clear boundaries between logic, data, and presentation
 
 ---
 
-## Database
+## 🛢️ Database
 
 - Uses **SQLite** for lightweight persistence
 - All database interactions are handled through DAO classes
@@ -67,7 +67,7 @@ The project follows a clean, modular architecture inspired by MVC principles.
 
 ---
 
-## Testing
+## ✅ Testing
 
 - Unit tests written with **JUnit**
 - **Mockito** used for mocking database dependencies
@@ -90,7 +90,7 @@ The project follows a clean, modular architecture inspired by MVC principles.
 
 ---
 
-## 📖 Previews
+## 📸 Previews
 
 
 ---
