@@ -90,10 +90,5 @@ The project follows a clean, modular architecture inspired by MVC principles.
 
 ---
 
-## 📸 Previews
-
-
----
-
 
 
