@@ -63,7 +63,7 @@ The project follows a clean, modular architecture inspired by MVC principles.
 
 - Uses **SQLite** for lightweight persistence
 - All database interactions are handled through DAO classes
-- Schema is automatically initialized on startup (if required)
+- Schema is automatically initialised on startup (if required)
 
 ---
 
